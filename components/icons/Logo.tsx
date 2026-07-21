@@ -58,7 +58,7 @@ type LogoProps = {
   className?: string;
 };
 
-export default function Logo({ className }: LogoProps) {
+export function Logo({ className }: LogoProps) {
   return (
     <LogoMark
       className={className}

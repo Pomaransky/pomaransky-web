@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { LogoIcon, logo } from "@/components/icons/Logo";
+import { LogoIcon, logo } from "@/components";
 
 export const size = {
   width: logo.width,
