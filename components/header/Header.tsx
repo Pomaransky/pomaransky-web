@@ -1,24 +1,26 @@
 "use client";
 
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/container/Container";
 import { Logo } from "@/components/icons/Logo";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import NavLink from "./components/NavLink/NavLink";
 
 const navLinks = [
-  { label: "About", href: "#" },
-  { label: "Experience", href: "#" },
-  { label: "Projects", href: "#" },
-  { label: "Contact", href: "#" },
-];
+  { key: "about", href: "#" },
+  { key: "experience", href: "#" },
+  { key: "projects", href: "#" },
+  { key: "contact", href: "#" },
+] as const;
 
 const linkClassName =
   "text-sm text-foreground/80 transition-colors hover:text-primary";
 
 export function Header() {
+  const t = useTranslations("Header.nav");
   const [open, setOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
 
@@ -47,7 +49,12 @@ export function Header() {
           <div className="flex items-center gap-2 sm:gap-4">
             <nav className="hidden items-center gap-x-6 md:flex">
               {navLinks.map((link) => (
-                <NavLink key={link.label} {...link} className={linkClassName} />
+                <NavLink
+                  key={link.key}
+                  href={link.href}
+                  label={t(link.key)}
+                  className={linkClassName}
+                />
               ))}
             </nav>
             <ThemeToggle />
@@ -83,9 +90,10 @@ export function Header() {
           <Container>
             <ul className="flex flex-col gap-1 pb-4">
               {navLinks.map((link) => (
-                <li key={link.label}>
+                <li key={link.key}>
                   <NavLink
-                    {...link}
+                    href={link.href}
+                    label={t(link.key)}
                     className={`block rounded-md px-2 py-2 ${linkClassName}`}
                     onClick={() => setOpen(false)}
                   />
