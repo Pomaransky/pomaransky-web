@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/container/Container";
 import { Logo } from "@/components/icons/Logo";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
@@ -16,13 +16,28 @@ const navLinks = [
 ];
 
 const linkClassName =
-  "text-sm text-foreground/80 transition-colors hover:text-sky-700";
+  "text-sm text-foreground/80 transition-colors hover:text-primary";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onClickOutside = (e: MouseEvent) => {
+      if (!headerRef.current?.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onClickOutside);
+    return () => document.removeEventListener("mousedown", onClickOutside);
+  }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-foreground/10 bg-background py-4">
+    <header
+      ref={headerRef}
+      className="sticky top-0 z-50 border-b border-foreground/10 bg-background py-4"
+    >
       <Container>
         <div className="flex items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-1">
@@ -39,7 +54,7 @@ export function Header() {
             <button
               type="button"
               onClick={() => setOpen((prev) => !prev)}
-              className="flex size-8 cursor-pointer items-center justify-center rounded-md text-foreground/80 transition-colors hover:text-sky-700 md:hidden"
+              className="flex size-8 cursor-pointer items-center justify-center rounded-md text-foreground/80 transition-colors hover:text-primary md:hidden"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               aria-controls="mobile-nav"
