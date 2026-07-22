@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/container/Container";
 import { Logo } from "@/components/icons/Logo";
+import { LanguageSwitcher } from "@/components/language/LanguageSwitcher";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import NavLink from "./components/NavLink/NavLink";
 
@@ -57,6 +58,7 @@ export function Header() {
                 />
               ))}
             </nav>
+            <LanguageSwitcher />
             <ThemeToggle />
             <button
               type="button"
