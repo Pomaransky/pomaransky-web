@@ -1,0 +1,10 @@
+{
+  "Header": {
+    "nav": {
+      "about": "O mnie",
+      "experience": "Doświadczenie",
+      "projects": "Projekty",
+      "contact": "Kontakt"
+    }
+  }
+}
