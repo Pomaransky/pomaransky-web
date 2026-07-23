@@ -38,5 +38,12 @@
       "title": "Front-End Developer",
       "organization": "EMBIQ Sp. z o.o."
     }
+  },
+  "Footer": {
+    "phoneLabel": "Call me",
+    "emailLabel": "Send me an email",
+    "githubLabel": "Visit my GitHub profile",
+    "linkedinLabel": "Visit my LinkedIn profile",
+    "rightsReserved": "All rights reserved."
   }
 }

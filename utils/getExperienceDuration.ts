@@ -1,7 +1,8 @@
-import { formatDuration, intervalToDuration, parseISO } from "date-fns";
-import { enUS, pl } from "date-fns/locale";
+import { intervalToDuration, parseISO } from "date-fns";
 
-const dateFnsLocales = { pl, en: enUS };
+function formatUnit(value: number, unit: "year" | "month", locale: string) {
+  return new Intl.NumberFormat(locale, { style: "unit", unit, unitDisplay: "short" }).format(value);
+}
 
 export function getExperienceDuration(start: string, end: string | null, locale: string) {
   const duration = intervalToDuration({
@@ -9,11 +10,13 @@ export function getExperienceDuration(start: string, end: string | null, locale:
     end: end ? parseISO(end) : new Date(),
   });
 
-  return formatDuration(
-    { years: duration.years, months: duration.months },
-    {
-      format: ["years", "months"],
-      locale: dateFnsLocales[locale as keyof typeof dateFnsLocales] ?? enUS,
-    }
-  );
+  const years = duration.years ?? 0;
+  const months = duration.months ?? 0;
+
+  return [
+    years > 0 ? formatUnit(years, "year", locale) : null,
+    months > 0 ? formatUnit(months, "month", locale) : null,
+  ]
+    .filter(Boolean)
+    .join(" ");
 }

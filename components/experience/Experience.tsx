@@ -21,7 +21,7 @@ export function Experience() {
       <Container maxWidth="max-w-4xl">
         <SectionTitle title={t("sectionTitle")} subtitle={t("sectionSubtitle")} />
         <div className="relative mt-10 mb-8">
-          <ol className="flex flex-col gap-10">
+          <ol className="flex flex-col gap-4 sm:gap-10">
             {experienceContent.map((item, index) => {
               const Icon = item.type === ExperienceEnum.EDUCATION ? GraduationCap : Briefcase;
               const isRight = index % 2 === 1;
@@ -42,7 +42,7 @@ export function Experience() {
               return (
                 <li
                   key={item.key}
-                  className="relative flex items-start gap-4 md:grid md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-6"
+                  className="relative flex items-start gap-6 md:grid md:grid-cols-[1fr_auto_1fr] md:items-center"
                 >
                   <div className="hidden md:block">
                     {!isRight && <ExperienceCard item={item} t={t} />}
@@ -81,7 +81,7 @@ export function Experience() {
                       className={`absolute left-1/2 text-[10px] font-semibold whitespace-nowrap ${yearLabelClass}`}
                       style={{
                         top: DOT_SIZE / 2 + bracketHeight + 6,
-                        transform: `translateX(calc(-50% + ${trackOffset + 6}px))`,
+                        transform: `translateX(calc(-50% + ${trackOffset + 5}px))`,
                       }}
                     >
                       {item.end ? getYear(parseISO(item.end)) : t("presentLabel")}

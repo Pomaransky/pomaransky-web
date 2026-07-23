@@ -14,11 +14,11 @@ export function ExperienceCard({ item, t }: ExperienceCardProps) {
 
   return (
     <div className="rounded-2xl border border-muted bg-muted/40 p-5 transition-colors hover:border-primary/40">
-      <p className="text-sm font-medium text-primary flex gap-1 items-center">
+      <p className="text-sm font-medium text-primary flex flex-col gap-1 md:flex-row md:items-center">
         <span>{period}</span>
-        {duration && <span className="text-foreground/80 font-normal"> ({duration})</span>}
+        {duration && <span className="text-foreground/80 text-xs font-normal">({duration})</span>}
       </p>
-      <h3 className="mt-1 font-semibold text-lg">{t(`${item.key}.title`)}</h3>
+      <h3 className="mt-1 font-semibold md:text-lg">{t(`${item.key}.title`)}</h3>
       <p className="mt-1 text-sm text-foreground/70">{t(`${item.key}.organization`)}</p>
     </div>
   );
