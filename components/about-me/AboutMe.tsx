@@ -7,7 +7,7 @@ export function AboutMe() {
   const t = useTranslations("AboutMe");
 
   return (
-    <section className="py-6 md:py-12">
+    <section className="scroll-mt-20 py-6 md:py-12" id="about">
       <Container maxWidth="max-w-4xl">
         <SectionTitle title={t("sectionTitle")} />
         <div className="mt-6 flex flex-col items-center gap-6 md:flex-row md:items-start">
