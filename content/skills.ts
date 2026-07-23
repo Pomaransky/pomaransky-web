@@ -18,6 +18,7 @@ export const skillsContent: SkillCategory[] = [
       { name: "RxJS" , featured: true},
       { name: "PrimeNG" },
       { name: "Angular Material" },
+      { name: "Bootstrap" },
       { name: "Formly" },
       { name: "FullCalendar" },
     ],
