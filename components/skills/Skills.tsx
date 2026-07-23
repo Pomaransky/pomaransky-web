@@ -9,7 +9,7 @@ export function Skills() {
   return (
     <section className="scroll-mt-20 py-6 md:py-12" id="skills">
       <Container maxWidth="max-w-4xl">
-        <SectionTitle title={t("Skills.sectionTitle")} />
+        <SectionTitle title={t("Skills.sectionTitle")} subtitle={t("Skills.sectionSubtitle")} />
         <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
           {skillsContent.map((category, index) => (
             <div
