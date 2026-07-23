@@ -14,7 +14,7 @@
   },
   "Skills": {
     "sectionTitle": "My Skills",
-    "sectionSubtitle": "",
+    "sectionSubtitle": "The main technologies, skills, and tools I use in my daily work. I keep growing these skills and picking up new ones.",
     "frameworksAndLibraries": "Frameworks & Libraries",
     "languagesAndStyling": "Languages & Styling",
     "toolsAndWorkflow": "Tools & Workflow",
@@ -25,5 +25,18 @@
     "teamCollaboration": "Team collaboration",
     "problemSolving": "Problem solving",
     "workIndependently": "Ability to work independently"
+  },
+  "Experience": {
+    "sectionTitle": "Education & Experience",
+    "sectionSubtitle": "A timeline of my education and commercial experience.",
+    "presentLabel": "Present",
+    "education": {
+      "title": "Master's Degree in Computer Science",
+      "organization": "John Paul II Catholic University of Lublin"
+    },
+    "embiq": {
+      "title": "Front-End Developer",
+      "organization": "EMBIQ Sp. z o.o."
+    }
   }
 }

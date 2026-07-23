@@ -13,7 +13,7 @@ import NavLink from "./components/NavLink/NavLink";
 const navLinks = [
   { key: "about", href: "#about" },
   { key: "skills", href: "#skills" },
-  { key: "experience", href: "#" },
+  { key: "experience", href: "#experience" },
   { key: "projects", href: "#" },
   { key: "contact", href: "#" },
 ] as const;

@@ -15,8 +15,8 @@ export function AboutMe() {
             <Image loading="eager" src="/photo.webp" alt="ap" width={224} height={224} className="size-full object-cover object-top" />
           </div>
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-semibold">Arkadiusz Pomarański</h3>  
-            <p className="text-secondary">Frontend Developer</p>
+            <h3 className="text-2xl font-semibold">Arkadiusz Pomarański</h3>
+            <p className="text-secondary">Front-End Developer</p>
             <p className="mt-4 text-foreground/80">{t("description", { age: calculateMyAge(new Date("1997-01-01")) })}</p> {/* Only year for privacy reasons. */}
           </div>
         </div>
