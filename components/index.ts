@@ -1,4 +1,6 @@
 export * from "./header/Header";
+export * from "./about-me/AboutMe";
+export * from "./section-title/SectionTitle";
 export * from "./container/Container";
 export * from "./theme/ThemeProvider";
 export * from "./theme/ThemeToggle";
