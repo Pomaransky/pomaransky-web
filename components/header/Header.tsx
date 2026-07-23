@@ -11,8 +11,8 @@ import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import NavLink from "./components/NavLink/NavLink";
 
 const navLinks = [
-  { key: "about", href: "#" },
-  { key: "skills", href: "#" },
+  { key: "about", href: "#about" },
+  { key: "skills", href: "#skills" },
   { key: "experience", href: "#" },
   { key: "projects", href: "#" },
   { key: "contact", href: "#" },
