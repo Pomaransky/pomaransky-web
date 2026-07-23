@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { Header, ThemeProvider } from "@/components";
+import { Footer, Header, ThemeProvider } from "@/components";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -48,6 +48,7 @@ export default async function RootLayout({
           <ThemeProvider>
             <Header />
             {children}
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

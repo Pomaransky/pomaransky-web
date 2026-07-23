@@ -1,4 +1,5 @@
 export * from "./header/Header";
+export * from "./footer/Footer";
 export * from "./about-me/AboutMe";
 export * from "./section-title/SectionTitle";
 export * from "./container/Container";
