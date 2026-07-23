@@ -1,0 +1,25 @@
+import { useTranslations } from "next-intl";
+import { Container } from "@/components/container/Container";
+import { SectionTitle } from "@/components/section-title/SectionTitle";
+import Image from "next/image";
+export function AboutMe() {
+  const t = useTranslations("AboutMe");
+
+  return (
+    <section className="py-6 md:py-12">
+      <Container maxWidth="max-w-4xl">
+        <SectionTitle title={t("sectionTitle")} />
+        <div className="mt-6 flex flex-col items-center gap-6 md:flex-row md:items-start">
+          <div className="flex size-48 shrink-0 items-center justify-center rounded-2xl bg-muted md:size-56 overflow-hidden">
+            <Image src="/photo.webp" alt="ap" width={224} height={224} className="size-full object-cover object-top" />
+          </div>
+          <div className="text-center md:text-left">
+            <h3 className="text-2xl font-semibold">Arkadiusz Pomarański</h3>  
+            <p className="text-secondary">Frontend Developer</p>
+            <p className="mt-4 text-foreground/80">{t("description")}</p>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
