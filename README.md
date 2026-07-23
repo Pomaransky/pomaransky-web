@@ -1,4 +1,4 @@
-# Arkadiusz Pomaranski - Portfolio
+# Arkadiusz Pomarański - Portfolio
 
 ## Tech stack:
 **Main:** Next.js (https://nextjs.org/) & React (https://react.dev/)  
