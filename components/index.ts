@@ -7,3 +7,4 @@ export * from "./theme/ThemeToggle";
 export * from "./language/LanguageSwitcher";
 export * from "./icons";
 export * from "./skills/Skills";
+export * from "./experience/Experience";

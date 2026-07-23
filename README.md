@@ -5,3 +5,4 @@
 **Icons:** Lucide for React (https://lucide.dev/guide/react/)  
 **Styling:** Tailwind CSS (https://tailwindcss.com/)  
 **Internationalization(i18n):** next-intl (https://next-intl.dev/)  
+**Date handling:** date-fns (https://date-fns.org/)  

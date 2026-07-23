@@ -25,5 +25,18 @@
     "teamCollaboration": "Praca zespołowa",
     "problemSolving": "Rozwiązywanie problemów",
     "workIndependently": "Umiejętność samodzielnej pracy"
+  },
+  "Experience": {
+    "sectionTitle": "Edukacja i doświadczenie",
+    "sectionSubtitle": "Oś czasu prezentująca mój okres nauki oraz doświadczenia komercyjnego.",
+    "presentLabel": "Obecnie",
+    "education": {
+      "title": "Magister Informatyki",
+      "organization": "Katolicki Uniwersytet Lubelski Jana Pawła II"
+    },
+    "embiq": {
+      "title": "Front-End Developer",
+      "organization": "EMBIQ Sp. z o.o."
+    }
   }
 }
