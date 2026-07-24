@@ -42,6 +42,11 @@
       "organization": "EMBIQ Sp. z o.o."
     }
   },
+  "Contact": {
+    "sectionTitle": "Napiszmy do siebie",
+    "sectionSubtitle": "Masz ofertę pracy, propozycję współpracy, a może po prostu chcesz się przywitać? Moja skrzynka jest otwarta.",
+    "ctaLabel": "Wyślij mi email"
+  },
   "Footer": {
     "phoneLabel": "Zadzwoń do mnie",
     "emailLabel": "Wyślij mi email",
@@ -52,7 +57,7 @@
   "Projects": {
     "sectionTitle": "Projekty",
     "sectionSubtitle": "Kilka rzeczy, które zbudowałem w pracy — od decyzji architektonicznych po detale, z którymi na co dzień stykają się użytkownicy.",
-    "seeAllLabel": "Zobacz wszystkie projekty",
+    "seeAllLabel": "Zobacz więcej projektów",
     "commercialTitle": "Projekty komercyjne",
     "commercialSubtitle": "Kilka rzeczy, które zbudowałem w pracy — od decyzji architektonicznych po detale, z którymi na co dzień stykają się użytkownicy.",
     "commercialMoreLabel": "...i wiele więcej.",

@@ -42,6 +42,11 @@
       "organization": "EMBIQ Sp. z o.o."
     }
   },
+  "Contact": {
+    "sectionTitle": "Let's Connect",
+    "sectionSubtitle": "Have a job offer, a collaboration proposal, or just want to say hi? My inbox is open.",
+    "ctaLabel": "Send me an email"
+  },
   "Footer": {
     "phoneLabel": "Call me",
     "emailLabel": "Send me an email",
@@ -52,7 +57,7 @@
   "Projects": {
     "sectionTitle": "Projects",
     "sectionSubtitle": "A few things I've built at work, from architecture decisions to the details users actually touch.",
-    "seeAllLabel": "See all projects",
+    "seeAllLabel": "See more projects",
     "commercialTitle": "Commercial Projects",
     "commercialSubtitle": "A few things I've built at work, from architecture decisions to the details users actually touch.",
     "commercialMoreLabel": "...and many more.",

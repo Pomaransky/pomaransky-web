@@ -4,6 +4,7 @@ import { differenceInCalendarMonths, getYear, parseISO } from "date-fns";
 import { Briefcase, GraduationCap } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/container/Container";
+import { Section } from "@/components/section/Section";
 import { SectionTitle } from "@/components/section-title/SectionTitle";
 import { experienceContent, ExperienceEnum } from "@/content/experience";
 import { ExperienceCard } from "./components/ExperienceCard/ExperienceCard";
@@ -17,7 +18,7 @@ export function Experience() {
   const t = useTranslations("Experience") as (key: string) => string;
 
   return (
-    <section className="scroll-mt-20 py-6 md:py-12" id="experience">
+    <Section id="experience">
       <Container maxWidth="max-w-4xl">
         <SectionTitle title={t("sectionTitle")} subtitle={t("sectionSubtitle")} />
         <div className="relative mt-10 mb-8">
@@ -101,6 +102,6 @@ export function Experience() {
           </ol>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }
