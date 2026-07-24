@@ -20,8 +20,12 @@ export default function NavLink({
   };
 
   return (
-    <Link href={href} className={className} onClick={handleClick}>
+    <Link href={href} className={`group relative ${className}`} onClick={handleClick}>
       {label}
+      <span
+        className="absolute inset-x-0 -bottom-1 h-0.5 origin-left scale-x-0 rounded-full bg-[linear-gradient(135deg,var(--color-primary),var(--color-secondary))] transition-transform duration-300 ease-out group-hover:scale-x-100"
+        aria-hidden
+      />
     </Link>
   );
 }

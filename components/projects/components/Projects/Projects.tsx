@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/container/Container";
+import { CustomLink } from "@/components/custom-link/CustomLink";
 import { SectionTitle } from "@/components/section-title/SectionTitle";
 import { projectsContent } from "@/content/projects";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
@@ -25,12 +25,7 @@ export function Projects({ isHomePage }: ProjectsProps) {
 
         {hasMore && (
           <div className="mt-6 flex justify-center">
-            <Link
-              href="/projects"
-              className="text-sm font-medium text-primary transition-colors hover:underline"
-            >
-              {t("seeAllLabel")}
-            </Link>
+            <CustomLink href="/projects">{t("seeAllLabel")}</CustomLink>
           </div>
         )}
       </Container>
