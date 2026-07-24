@@ -71,4 +71,11 @@ export const skillsContent: SkillCategory[] = [
       { key: "Skills.workIndependently" },
     ],
   },
+  {
+    sectionTitle: "Skills.languages",
+    skills: [
+      { key: "Skills.polish" },
+      { key: "Skills.english" },
+    ],
+  },
 ];

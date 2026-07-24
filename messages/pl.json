@@ -24,7 +24,10 @@
     "goodCommunication": "Dobre umiejętności komunikacyjne",
     "teamCollaboration": "Praca zespołowa",
     "problemSolving": "Rozwiązywanie problemów",
-    "workIndependently": "Umiejętność samodzielnej pracy"
+    "workIndependently": "Umiejętność samodzielnej pracy",
+    "languages": "Języki",
+    "polish": "Polski: Ojczysty",
+    "english": "Angielski: B2"
   },
   "Experience": {
     "sectionTitle": "Edukacja i doświadczenie",
@@ -45,5 +48,76 @@
     "githubLabel": "Odwiedź mój profil GitHub",
     "linkedinLabel": "Odwiedź mój profil LinkedIn",
     "rightsReserved": "Wszelkie prawa zastrzeżone."
+  },
+  "Projects": {
+    "sectionTitle": "Projekty",
+    "sectionSubtitle": "Kilka rzeczy, które zbudowałem w pracy — od decyzji architektonicznych po detale, z którymi na co dzień stykają się użytkownicy.",
+    "seeAllLabel": "Zobacz wszystkie projekty",
+    "commercialTitle": "Projekty komercyjne",
+    "commercialSubtitle": "Kilka rzeczy, które zbudowałem w pracy — od decyzji architektonicznych po detale, z którymi na co dzień stykają się użytkownicy.",
+    "commercialMoreLabel": "...i wiele więcej.",
+    "sideTitle": "Projekty własne",
+    "sideSubtitle": "Prywatne projekty, które zbudowałem w wolnym czasie, aby poznawać nowe technologie i pomysły.",
+    "githubRepository": "Repozytorium GitHub",
+    "techStackLabel": "Stos technologiczny:",
+    "hrPlatform": {
+      "title": "System zarządzania procesami HR",
+      "description": "Aplikacja w Angularze do obsługi procesów HR w firmach.",
+      "highlights": [
+        "Zaprojektowałem i wdrożyłem silnik dynamicznego renderowania komponentów, generujący widoki UI na podstawie konfiguracji z backendu, co skróciło czas wdrażania nowych procesów HR.",
+        "Zbudowałem konfigurowalny moduł formularzy dynamicznych oparty o Formly, z własnymi typami pól, regułami walidacji i akcjami sterowanymi zdarzeniami, umożliwiający definiowanie procesów HR osobom nietechnicznym.",
+        "Współtworzyłem wieloetapowy workflow akceptacji wniosków, obejmujący pełny proces zgłaszania, weryfikacji i rozstrzygania wniosków HR.",
+        "Zaimplementowałem moduł TimeCard do rejestracji czasu pracy w podziale na projekty wraz z raportowaniem.",
+        "Zapewniłem zgodność z WCAG AA oraz pełne wsparcie wielojęzyczności przy użyciu ngx-translate."
+      ]
+    },
+    "nfcConfigTool": {
+      "title": "Narzędzie do konfiguracji kart NFC",
+      "description": "Progresywna aplikacja webowa do odczytu i konfiguracji kart NFC za pomocą USB Web API.",
+      "highlights": [
+        "Zbudowałem progresywną aplikację webową (PWA) do odczytu i konfiguracji kart NFC za pomocą USB Web API.",
+        "Zaimplementowałem wsparcie dla wielu wersji firmware, zapewniające wsteczną kompatybilność między różnym sprzętem kart.",
+        "Zbudowałem dashboardy wizualizacji danych w czasie rzeczywistym przy użyciu Chart.js do diagnostyki urządzeń."
+      ]
+    },
+    "streamingVodPlatform": {
+      "title": "Platforma streamingowa/VOD",
+      "description": "Wieloplatformowa aplikacja do streamingu i wideo na żądanie (VOD) dla Android Mobile, iOS, Android TV oraz Tizen (Samsung Smart TV).",
+      "highlights": [
+        "Utrzymywałem i rozwijałem wieloplatformową aplikację do streamingu i wideo na żądanie (VOD), działającą na Android Mobile, iOS, Android TV oraz Tizen (Samsung Smart TV).",
+        "Rozwiązywałem problemy z odtwarzaniem i optymalizowałem odtwarzacz Video.js z adaptacyjnym strumieniowaniem (adaptive bitrate) w środowiskach specyficznych dla poszczególnych platform.",
+        "Zaimplementowałem wsparcie dla wielu języków."
+      ]
+    },
+    "imageInvestmentPlatform": {
+      "title": "Platforma inwestycyjna oparta o tokenizację obrazów",
+      "description": "Platforma inwestycyjna w Next.js umożliwiająca handel obrazami w formie tokenów wraz z integracją portfela.",
+      "highlights": [
+        "Zbudowałem platformę inwestycyjną umożliwiającą handel obrazami w formie tokenów wraz z integracją portfela przez RainbowKit.",
+        "Zaimplementowałem przeglądarkę galerii obrazów w wysokiej rozdzielczości przy użyciu OpenSeadragon z możliwością przybliżania i przesuwania.",
+        "Zintegrowałem AWS Amplify Gen2 do obsługi uwierzytelniania, API oraz bezserwerowej infrastruktury backendowej."
+      ]
+    },
+    "pulsar": {
+      "title": "Pulsar",
+      "description": "Pełna platforma społecznościowa do publikowania postów i komentarzy, zbudowana w Angular 20 i NgRx Signal Store.",
+      "highlights": [
+        "Zbudowałem pełną platformę społecznościową do publikowania postów i komentarzy z paginowanymi feedami.",
+        "Zaimplementowałem kontrolę dostępu opartą o role (RBAC) wraz z panelem administracyjnym do zarządzania użytkownikami i moderacji.",
+        "Dodałem przełączanie jasnego/ciemnego motywu oraz wsparcie wielojęzyczności przy użyciu ngx-translate.",
+        "Napisałem testy jednostkowe przy użyciu Karma i Jasmine, aby zapewnić niezawodność komponentów i zapobiegać regresjom.",
+        "Zaimplementowałem system moderacji użytkowników z trwałymi banami, banami czasowymi oraz shadow banami kontrolującymi widoczność treści."
+      ]
+    },
+    "portfolio": {
+      "title": "Strona portfolio",
+      "description": "Ta strona portfolio, zbudowana w celu zaprezentowania mojego doświadczenia, umiejętności i projektów w dwujęzycznym interfejsie z obsługą motywów.",
+      "highlights": [
+        "Zbudowana przy użyciu Next.js App Router i TypeScript dla szybkiej, statycznie zoptymalizowanej strony.",
+        "Zaimplementowałem wsparcie wielojęzyczności (polski/angielski) przy użyciu next-intl z routingiem uwzględniającym język.",
+        "Dodałem przełączanie jasnego/ciemnego motywu przy użyciu next-themes.",
+        "Ostylowana przy użyciu Tailwind CSS dla w pełni responsywnego, dostępnego układu."
+      ]
+    }
   }
 }
