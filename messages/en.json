@@ -42,6 +42,11 @@
       "organization": "EMBIQ Sp. z o.o."
     }
   },
+  "Contact": {
+    "sectionTitle": "Let's Connect",
+    "sectionSubtitle": "Have a job offer, a collaboration proposal, or just want to say hi? My inbox is open.",
+    "ctaLabel": "Send me an email"
+  },
   "Footer": {
     "phoneLabel": "Call me",
     "emailLabel": "Send me an email",

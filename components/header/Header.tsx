@@ -15,7 +15,7 @@ const navLinks = [
   { key: "skills", href: "#skills" },
   { key: "experience", href: "#experience" },
   { key: "projects", href: "/projects" },
-  { key: "contact", href: "#" },
+  { key: "contact", href: "#contact" },
 ] as const;
 
 const linkClassName =

@@ -42,6 +42,11 @@
       "organization": "EMBIQ Sp. z o.o."
     }
   },
+  "Contact": {
+    "sectionTitle": "Napiszmy do siebie",
+    "sectionSubtitle": "Masz ofertę pracy, propozycję współpracy, a może po prostu chcesz się przywitać? Moja skrzynka jest otwarta.",
+    "ctaLabel": "Wyślij mi email"
+  },
   "Footer": {
     "phoneLabel": "Zadzwoń do mnie",
     "emailLabel": "Wyślij mi email",
