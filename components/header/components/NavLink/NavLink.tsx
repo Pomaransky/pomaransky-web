@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { NavLinkProps } from "./NavLink.props";
 
 export default function NavLink({

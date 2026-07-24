@@ -3,7 +3,7 @@
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { Container } from "@/components/container/Container";
 import { Logo } from "@/components/icons/Logo";
 import { LanguageSwitcher } from "@/components/language/LanguageSwitcher";
@@ -14,7 +14,7 @@ const navLinks = [
   { key: "about", href: "#about" },
   { key: "skills", href: "#skills" },
   { key: "experience", href: "#experience" },
-  { key: "projects", href: "#" },
+  { key: "projects", href: "/projects" },
   { key: "contact", href: "#" },
 ] as const;
 
@@ -23,8 +23,13 @@ const linkClassName =
 
 export function Header() {
   const t = useTranslations("Header.nav");
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [open, setOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
+
+  const resolveHref = (href: string) =>
+    href.startsWith("#") && !isHome ? `/${href}` : href;
 
   useEffect(() => {
     if (!open) return;
@@ -53,7 +58,7 @@ export function Header() {
               {navLinks.map((link) => (
                 <NavLink
                   key={link.key}
-                  href={link.href}
+                  href={resolveHref(link.href)}
                   label={t(link.key)}
                   className={linkClassName}
                 />
@@ -95,7 +100,7 @@ export function Header() {
               {navLinks.map((link) => (
                 <li key={link.key}>
                   <NavLink
-                    href={link.href}
+                    href={resolveHref(link.href)}
                     label={t(link.key)}
                     className={`block rounded-md px-2 py-2 ${linkClassName}`}
                     onClick={() => setOpen(false)}

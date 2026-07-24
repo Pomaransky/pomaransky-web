@@ -9,3 +9,5 @@ export * from "./language/LanguageSwitcher";
 export * from "./icons";
 export * from "./skills/Skills";
 export * from "./experience/Experience";
+export * from "./projects/components/Projects/Projects";
+export * from "./projects/ProjectsPage";

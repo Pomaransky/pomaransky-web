@@ -24,7 +24,10 @@
     "goodCommunication": "Good communication skills",
     "teamCollaboration": "Team collaboration",
     "problemSolving": "Problem solving",
-    "workIndependently": "Ability to work independently"
+    "workIndependently": "Ability to work independently",
+    "languages": "Languages",
+    "polish": "Polish: Native",
+    "english": "English: B2"
   },
   "Experience": {
     "sectionTitle": "Education & Experience",
@@ -45,5 +48,76 @@
     "githubLabel": "Visit my GitHub profile",
     "linkedinLabel": "Visit my LinkedIn profile",
     "rightsReserved": "All rights reserved."
+  },
+  "Projects": {
+    "sectionTitle": "Projects",
+    "sectionSubtitle": "A few things I've built at work, from architecture decisions to the details users actually touch.",
+    "seeAllLabel": "See all projects",
+    "commercialTitle": "Commercial Projects",
+    "commercialSubtitle": "A few things I've built at work, from architecture decisions to the details users actually touch.",
+    "commercialMoreLabel": "...and many more.",
+    "sideTitle": "Side Projects",
+    "sideSubtitle": "Personal projects I've built on my own time to explore new technologies and ideas.",
+    "githubRepository": "GitHub Repository",
+    "techStackLabel": "Tech stack:",
+    "hrPlatform": {
+      "title": "HR Process Management System",
+      "description": "An Angular application for handling HR processes in companies.",
+      "highlights": [
+        "Designed and implemented a dynamic component rendering engine that generates UI views from backend configuration, reducing development time for new HR workflows.",
+        "Built a configurable dynamic forms module using Formly with custom field types, validation rules, and event-driven actions, enabling non-developers to define HR processes.",
+        "Contributed to a multi-step request approval workflow handling end-to-end submission, review, and resolution of HR requests.",
+        "Implemented a TimeCard module for project-based time tracking with reporting capabilities.",
+        "Ensured WCAG AA accessibility compliance and full internationalization support using ngx-translate."
+      ]
+    },
+    "nfcConfigTool": {
+      "title": "NFC Card Configuration Tool",
+      "description": "A Progressive Web App for reading and configuring NFC-enabled cards over the USB Web API.",
+      "highlights": [
+        "Developed a Progressive Web Application for reading and configuring NFC-enabled cards via the USB Web API.",
+        "Implemented multi-version firmware support to ensure backward compatibility across different card hardware.",
+        "Built real-time data visualization dashboards using Chart.js for device diagnostics."
+      ]
+    },
+    "streamingVodPlatform": {
+      "title": "Streaming/VOD Platform",
+      "description": "A cross-platform streaming and video-on-demand application for Android Mobile, iOS, Android TV, and Tizen (Samsung Smart TV).",
+      "highlights": [
+        "Maintained and improved a cross-platform streaming and video-on-demand application targeting Android Mobile, iOS, Android TV, and Tizen (Samsung Smart TV).",
+        "Resolved playback issues and optimized the Video.js player with adaptive bitrate streaming across platform-specific environments.",
+        "Implemented multi-language support."
+      ]
+    },
+    "imageInvestmentPlatform": {
+      "title": "Token-Based Image Investment Platform",
+      "description": "A Next.js investment platform enabling token-based image trading with wallet integration.",
+      "highlights": [
+        "Built an investment platform enabling token-based image trading with wallet integration via RainbowKit.",
+        "Implemented a high-resolution image gallery viewer using OpenSeadragon with zoom and pan capabilities.",
+        "Integrated AWS Amplify Gen2 for authentication, API, and serverless backend infrastructure."
+      ]
+    },
+    "pulsar": {
+      "title": "Pulsar",
+      "description": "A full-stack social platform for publishing posts and comments, built with Angular 20 and NgRx Signal Store.",
+      "highlights": [
+        "Built a full-stack social platform for publishing posts and comments with paginated feeds.",
+        "Implemented role-based access control with an admin panel for user management and moderation.",
+        "Added light/dark theme switching and multi-language support using ngx-translate.",
+        "Wrote unit tests using Karma and Jasmine to ensure component reliability and prevent regressions.",
+        "Implemented a user moderation system with permanent bans, time-based bans, and shadow bans for content visibility control."
+      ]
+    },
+    "portfolio": {
+      "title": "Portfolio Website",
+      "description": "This portfolio website, built to showcase my experience, skills, and projects with a bilingual, theme-aware interface.",
+      "highlights": [
+        "Built with Next.js App Router and TypeScript for a fast, statically-optimized site.",
+        "Implemented multi-language support (English/Polish) using next-intl with locale-aware routing.",
+        "Added light/dark theme switching using next-themes.",
+        "Styled with Tailwind CSS for a fully responsive, accessible layout."
+      ]
+    }
   }
 }
