@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/container/Container";
+import { Section } from "@/components/section/Section";
 import { SectionTitle } from "@/components/section-title/SectionTitle";
 import Image from "next/image";
 import { calculateMyAge } from "@/utils/calculatyMyAge";
@@ -7,7 +8,7 @@ export function AboutMe() {
   const t = useTranslations("AboutMe");
 
   return (
-    <section className="scroll-mt-20 py-6 md:py-12" id="about">
+    <Section id="about">
       <Container maxWidth="max-w-4xl">
         <SectionTitle title={t("sectionTitle")} />
         <div className="mt-6 flex flex-col items-center gap-6 md:flex-row md:items-start">
@@ -21,6 +22,6 @@ export function AboutMe() {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

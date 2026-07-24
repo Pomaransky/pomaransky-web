@@ -6,7 +6,7 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Experience />
-      <Projects isHomePage={true} />
+      <Projects />
       <Contact />
     </main>
   );
