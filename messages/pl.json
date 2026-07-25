@@ -82,7 +82,8 @@
       "highlights": [
         "Zbudowałem progresywną aplikację webową (PWA) do odczytu i konfiguracji kart NFC za pomocą USB Web API.",
         "Zaimplementowałem wsparcie dla wielu wersji firmware, zapewniające wsteczną kompatybilność między różnym sprzętem kart.",
-        "Zbudowałem dashboardy wizualizacji danych w czasie rzeczywistym przy użyciu Chart.js do diagnostyki urządzeń."
+        "Zbudowałem dashboardy wizualizacji danych w czasie rzeczywistym przy użyciu Chart.js do diagnostyki urządzeń.",
+        "Napisałem testy jednostkowe, aby zapewnić niezawodność komponentów i zapobiegać regresjom, osiągając pokrycie kodu na poziomie ponad 80%."
       ]
     },
     "streamingVodPlatform": {

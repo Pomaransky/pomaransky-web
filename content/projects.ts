@@ -34,7 +34,7 @@ export const projectsContent: ProjectItem[] = [
     key: "hrPlatform",
     techStack: [
       "Angular 18",
-      "NgRX",
+      "NgRx",
       "RxJS",
       "TypeScript",
       "PrimeNG",
@@ -46,7 +46,8 @@ export const projectsContent: ProjectItem[] = [
   },
   {
     key: "nfcConfigTool",
-    techStack: ["Angular 17", "NgRX Signal Store", "RxJS", "Chart.js"],
+    techStack: ["Angular 17", "NgRx Signal Store", "RxJS", "Chart.js", "Karma",
+      "Jasmine",],
     url: "https://lpccs-docs.renesas.com/ntpg_apps/NFCAntTool/v1.1.0/matching-calc",
   },
   {

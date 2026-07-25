@@ -82,7 +82,8 @@
       "highlights": [
         "Developed a Progressive Web Application for reading and configuring NFC-enabled cards via the USB Web API.",
         "Implemented multi-version firmware support to ensure backward compatibility across different card hardware.",
-        "Built real-time data visualization dashboards using Chart.js for device diagnostics."
+        "Built real-time data visualization dashboards using Chart.js for device diagnostics.",
+        "Wrote unit tests to ensure component reliability and prevent regressions with over 80% coverage"
       ]
     },
     "streamingVodPlatform": {
