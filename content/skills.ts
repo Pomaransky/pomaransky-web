@@ -14,7 +14,7 @@ export const skillsContent: SkillCategory[] = [
       { name: "Angular (6+)", featured: true },
       { name: "React", featured: true },
       { name: "Next.js" , featured: true},
-      { name: "NgRX" , featured: true},
+      { name: "NgRx" , featured: true},
       { name: "RxJS" , featured: true},
       { name: "PrimeNG" },
       { name: "Angular Material" },
@@ -39,6 +39,10 @@ export const skillsContent: SkillCategory[] = [
     skills: [
       { name: "Unit Testing (Jasmine, Karma)" },
       { name: "Git", featured: true },
+      { name: "NPM" },
+      { name: "Node.js" },
+      { name: "Angular CLI" },
+      { name: "Figma" },
       { name: "JIRA" },
       { name: "Confluence" },
       { name: "Cursor AI" },
@@ -53,13 +57,15 @@ export const skillsContent: SkillCategory[] = [
   {
     sectionTitle: "Skills.practices",
     skills: [
-      { name: "Responsive Web Design (RWD)", featured: true },
+      { name: "Microfrontends", featured: true },
+      { name: "Responsive Web Design (RWD)" },
       { name: "Code Review" },
       { key: "Skills.wcagAccessibility" },
       { name: "Agile (Scrum/Kanban)" },
       { name: "Clean Code" },
       { name: "DRY", featured: true },
       { name: "SOLID", featured: true },
+      { name: "KISS", featured: true },
     ],
   },
   {
