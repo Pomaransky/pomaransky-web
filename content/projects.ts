@@ -45,6 +45,20 @@ export const projectsContent: ProjectItem[] = [
     ],
   },
   {
+    key: "vehicleProtectionPlatform",
+    techStack: [
+      "Angular 17",
+      "NgRx",
+      "RxJS",
+      "GraphQL",
+      "Ngx-translate",
+      "Bootstrap",
+      "Figma",
+      "AWS Amplify",
+    ],
+    url: "https://www.i-duv.com/",
+  },
+  {
     key: "nfcConfigTool",
     techStack: ["Angular 17", "NgRx Signal Store", "RxJS", "Chart.js", "Karma",
       "Jasmine",],
@@ -61,12 +75,19 @@ export const projectsContent: ProjectItem[] = [
       "GluestackUI",
       "OpenSeadragon",
       "RainbowKit",
+      "Chart.js",
+      "Figma",
     ],
     url: "https://app.art-e-fact.com/",
   },
   {
     key: "streamingVodPlatform",
-    techStack: ["Angular 14", "RxJS", "Video.js", "Ngx-translate", "SCSS"],
+    techStack: ["Angular 14", "RxJS", "Video.js", "Ngx-translate", "SCSS", "Figma"],
+  },
+  {
+    key: "companyWebsite",
+    techStack: ["React", "Directus", "GraphQL", "Bootstrap" ,"SCSS", "Adobe XD"],
+    url: "https://embiq.com/",
   },
 ];
 
