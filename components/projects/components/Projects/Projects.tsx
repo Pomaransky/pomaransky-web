@@ -6,7 +6,7 @@ import { SectionTitle } from "@/components/section-title/SectionTitle";
 import { projectsContent } from "@/content/projects";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 
-const MAX_PREVIEW_PROJECTS = 2;
+const MAX_PREVIEW_PROJECTS = 3;
 
 export function Projects() {
   const t = useTranslations("Projects");
