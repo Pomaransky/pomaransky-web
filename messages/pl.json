@@ -43,9 +43,9 @@
     }
   },
   "Contact": {
-    "sectionTitle": "Napiszmy do siebie",
-    "sectionSubtitle": "Masz ofertę pracy, propozycję współpracy, a może po prostu chcesz się przywitać? Moja skrzynka jest otwarta.",
-    "ctaLabel": "Wyślij mi email"
+    "sectionTitle": "Skontaktujmy się",
+    "sectionSubtitle": "Masz ofertę pracy, propozycję współpracy, a może po prostu chcesz się przywitać? Napisz lub zadzwoń - na pewno się odezwę.",
+    "ctaLabel": "Wyślij mi e-mail"
   },
   "Footer": {
     "phoneLabel": "Zadzwoń do mnie",
