@@ -21,6 +21,7 @@ export const skillsContent: SkillCategory[] = [
       { name: "Bootstrap" },
       { name: "Formly" },
       { name: "FullCalendar" },
+      { name: "Ngx-translate" },
     ],
   },
   {

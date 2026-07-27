@@ -95,6 +95,17 @@
         "Zaimplementowałem wsparcie dla wielu języków."
       ]
     },
+    "companyWebsite": {
+      "title": "Strona firmowa i CMS",
+      "description": "Firmowa strona marketingowa EMBIQ, zbudowana w React z headless CMS Directus.",
+      "highlights": [
+        "Zbudowałem większość strony firmowej od podstaw w React, na podstawie dostarczonego projektu graficznego dostarczonego w Adobe XD.",
+        "Zaprojektowałem modele treści i relacje w Directusie (headless CMS) dla dynamicznych sekcji takich jak Blog, FAQ i Oferty pracy.",
+        "Pobierałem i odpytywałem treści z Directusa przy użyciu GraphQL, renderując dynamiczne strony oparte o CMS.",
+        "Zaimplementowałem animacje i stylowanie w SCSS zgodne z identyfikacją wizualną marki.",
+        "Zbudowałem komponenty wielokrotnego użytku, w tym karuzele testimoniali oraz slidery."
+      ]
+    },
     "imageInvestmentPlatform": {
       "title": "Platforma inwestycyjna oparta o tokenizację obrazów",
       "description": "Platforma inwestycyjna w Next.js umożliwiająca handel obrazami w formie tokenów wraz z integracją portfela.",
@@ -102,6 +113,18 @@
         "Zbudowałem platformę inwestycyjną umożliwiającą handel obrazami w formie tokenów wraz z integracją portfela przez RainbowKit.",
         "Zaimplementowałem przeglądarkę galerii obrazów w wysokiej rozdzielczości przy użyciu OpenSeadragon z możliwością przybliżania i przesuwania.",
         "Zintegrowałem AWS Amplify Gen2 do obsługi uwierzytelniania, API oraz bezserwerowej infrastruktury backendowej."
+      ]
+    },
+    "vehicleProtectionPlatform": {
+      "title": "Platforma ochrony pojazdów I-DUV",
+      "description": "Platforma webowa dla I-DUV — zatwierdzonego przez Stellantis systemu ochrony przed kradzieżą i śledzenia pojazdów, obejmująca weryfikację VIN, zarządzanie subskrypcjami i płatności regionalne.",
+      "highlights": [
+        "Zbudowałem dynamiczne, wieloetapowe formularze z logiką warunkową i walidacją w czasie rzeczywistym do rejestracji pojazdów, weryfikacji VIN oraz zarządzania subskrypcjami.",
+        "Zaimplementowałem obsługę wielu regionów i języków, z dynamicznym dopasowaniem treści oraz przepływów aplikacji do wybranego rynku.",
+        "Zintegrowałem regionalnych dostawców płatności w procesie zakupu i odnawiania subskrypcji (między innymi dla rynku brazylijskiego).",
+        "Przełożyłem projekty graficzne z Figmy na responsywne, dokładnie odwzorowane widoki.",
+        "Zarządzałem stanem aplikacji przy użyciu NgRx oraz pobierałem dane z backendu przez GraphQL.",
+        "Modelowałem dane w AWS Amplify oraz wykorzystywałem feature flagi do sterowania udostępnianiem funkcjonalności w poszczególnych regionach."
       ]
     },
     "pulsar": {

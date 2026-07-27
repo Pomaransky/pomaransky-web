@@ -95,6 +95,17 @@
         "Implemented multi-language support."
       ]
     },
+    "companyWebsite": {
+      "title": "Company Website & CMS",
+      "description": "The corporate marketing website for EMBIQ, built with React and a headless Directus CMS.",
+      "highlights": [
+        "Built the majority of the company website from scratch using React, based on the provided design in Adobe XD.",
+        "Designed content models and relations in Directus (headless CMS) for dynamic sections such as the Blog, FAQ, and Job Offers.",
+        "Consumed and queried Directus content via GraphQL to render dynamic, CMS-driven pages.",
+        "Implemented custom animations and styling with SCSS to match the brand's visual identity.",
+        "Built reusable UI components, including testimonial carousels and sliders."
+      ]
+    },
     "imageInvestmentPlatform": {
       "title": "Token-Based Image Investment Platform",
       "description": "A Next.js investment platform enabling token-based image trading with wallet integration.",
@@ -102,6 +113,18 @@
         "Built an investment platform enabling token-based image trading with wallet integration via RainbowKit.",
         "Implemented a high-resolution image gallery viewer using OpenSeadragon with zoom and pan capabilities.",
         "Integrated AWS Amplify Gen2 for authentication, API, and serverless backend infrastructure."
+      ]
+    },
+    "vehicleProtectionPlatform": {
+      "title": "I-DUV Vehicle Protection Platform",
+      "description": "A web platform for I-DUV, a Stellantis-approved vehicle theft protection and tracking system, covering VIN verification, subscription management, and regional payments.",
+      "highlights": [
+        "Built dynamic, multi-step forms with conditional logic and real-time validation for vehicle registration, VIN verification, and subscription management.",
+        "Implemented multi-region and multi-language support, dynamically adapting content and application flows to the selected market.",
+        "Integrated region-specific payment providers into the subscription checkout and renewal flow (including for the Brazilian market).",
+        "Translated Figma designs into responsive, pixel-accurate views.",
+        "Managed application state with NgRx and consumed backend data via GraphQL.",
+        "Modeled backend data in AWS Amplify and used feature flags to control functionality rollout across regions."
       ]
     },
     "pulsar": {
