@@ -64,6 +64,7 @@
     "sideTitle": "Side Projects",
     "sideSubtitle": "Personal projects I've built on my own time to explore new technologies and ideas.",
     "githubRepository": "GitHub Repository",
+    "visitLiveLabel": "Visit live",
     "techStackLabel": "Tech stack:",
     "hrPlatform": {
       "title": "HR Process Management System",

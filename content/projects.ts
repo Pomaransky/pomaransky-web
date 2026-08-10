@@ -12,6 +12,7 @@ type ProjectKey = Exclude<
   | "sideTitle"
   | "sideSubtitle"
   | "githubRepository"
+  | "visitLiveLabel"
   | "techStackLabel"
 >;
 
