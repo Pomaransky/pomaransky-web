@@ -8,19 +8,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const highlights = t.raw(`${project.key}.highlights`) as string[];
 
   return (
-    <div className="relative rounded-2xl border border-muted bg-muted/40 p-6 transition-colors hover:border-primary/40">
+    <div
+      className={`relative rounded-2xl border border-muted bg-muted/40 p-6 transition-colors hover:border-primary/40 ${project.url ? "pt-12 sm:pt-6" : ""}`}
+    >
       {project.url && (
         <a
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute right-6 top-6 text-foreground/60 transition-colors hover:text-primary"
+          className="absolute right-6 top-6 flex items-center gap-2 text-xs text-foreground/60 transition-colors hover:text-primary"
           aria-label={t(`${project.key}.title`)}
         >
-          <ExternalLink className="size-5" aria-hidden />
+          <span>{t("visitLiveLabel")}</span><ExternalLink className="size-4" aria-hidden />
         </a>
       )}
-      <h3 className="text-lg font-semibold text-primary">{t(`${project.key}.title`)}</h3>
+      <h3 className={`text-lg font-semibold text-primary ${project.url ? "sm:pr-24" : ""}`}>
+        {t(`${project.key}.title`)}
+      </h3>
       <p className="mt-2 text-sm font-medium text-foreground/80">{t(`${project.key}.description`)}</p>
 
       <ul className="mt-4 flex flex-col gap-2">
