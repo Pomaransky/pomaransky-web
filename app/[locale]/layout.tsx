@@ -17,8 +17,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pomaransky.vercel.app"),
   title: "Pomaransky",
-  description: "Arkadiusz Pomarański portfolio",
+  description: "Arkadiusz Pomarański - Frontend Developer",
+  keywords: ["Arkadiusz Pomarański", "Frontend Developer", "Software Engineer", "Software Developer"],
+  authors: [{ name: "Arkadiusz Pomarański", url: "https://pomaransky.vercel.app" }],
+  creator: "Arkadiusz Pomarański",
+  publisher: "Arkadiusz Pomarański",
+  openGraph: {
+    title: "Pomaransky",
+    description: "Arkadiusz Pomarański - Frontend Developer",
+    type: "website",
+    url: "https://pomaransky.vercel.app",
+    siteName: "Pomaransky",
+  },
 };
 
 export function generateStaticParams() {
