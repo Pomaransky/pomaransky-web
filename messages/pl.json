@@ -66,6 +66,7 @@
     "githubRepository": "Repozytorium GitHub",
     "visitLiveLabel": "Zobacz na żywo",
     "techStackLabel": "Stos technologiczny:",
+    "durationLabel": "Czas trwania:",
     "hrPlatform": {
       "title": "System zarządzania procesami HR",
       "description": "Aplikacja w Angularze do obsługi procesów HR w firmach.",
@@ -114,6 +115,14 @@
         "Zbudowałem platformę inwestycyjną umożliwiającą handel obrazami w formie tokenów wraz z integracją portfela przez RainbowKit.",
         "Zaimplementowałem przeglądarkę galerii obrazów w wysokiej rozdzielczości przy użyciu OpenSeadragon z możliwością przybliżania i przesuwania.",
         "Zintegrowałem AWS Amplify Gen2 do obsługi uwierzytelniania, API oraz bezserwerowej infrastruktury backendowej."
+      ]
+    },
+    "popeyesRestaurant": {
+      "title": "Strona internetowa restauracji Popeyes UK",
+      "description": "Strona internetowa restauracji Popeyes UK, zbudowana w Angularze.",
+      "highlights": [
+        "Zaimplementowałem płatności online PayPal z przepływem 'Continue'",
+        "Poprawiałem różne niedociągniecia i bugi w aplikacji."
       ]
     },
     "vehicleProtectionPlatform": {
