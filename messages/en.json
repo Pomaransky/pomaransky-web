@@ -66,6 +66,7 @@
     "githubRepository": "GitHub Repository",
     "visitLiveLabel": "Visit live",
     "techStackLabel": "Tech stack:",
+    "durationLabel": "Duration:",
     "hrPlatform": {
       "title": "HR Process Management System",
       "description": "An Angular application for handling HR processes in companies.",
@@ -114,6 +115,14 @@
         "Built an investment platform enabling token-based image trading with wallet integration via RainbowKit.",
         "Implemented a high-resolution image gallery viewer using OpenSeadragon with zoom and pan capabilities.",
         "Integrated AWS Amplify Gen2 for authentication, API, and serverless backend infrastructure."
+      ]
+    },
+    "popeyesRestaurant": {
+      "title": "Popeyes UK",
+      "description": "Popeyes UK restaurant website",
+      "highlights": [
+        "Implemented PayPal online payments with the 'Continue' flow",
+        "Fixed various issues and bugs in the application."
       ]
     },
     "vehicleProtectionPlatform": {

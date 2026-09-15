@@ -22,6 +22,7 @@ export const skillsContent: SkillCategory[] = [
       { name: "Formly" },
       { name: "FullCalendar" },
       { name: "Ngx-translate" },
+      { name: "ReactNative" },
     ],
   },
   {

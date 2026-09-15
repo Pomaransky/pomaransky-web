@@ -14,6 +14,7 @@ type ProjectKey = Exclude<
   | "githubRepository"
   | "visitLiveLabel"
   | "techStackLabel"
+  | "durationLabel"
 >;
 
 export type ProjectLinkKey = "githubRepository";
@@ -26,6 +27,7 @@ export type ProjectLink = {
 export type ProjectItem = {
   key: ProjectKey;
   techStack: string[];
+  duration?: number;
   url?: string;
   links?: ProjectLink[];
 };
@@ -44,6 +46,7 @@ export const projectsContent: ProjectItem[] = [
       "date-fns",
       "Ngx-translate",
     ],
+    duration: 12,
   },
   {
     key: "vehicleProtectionPlatform",
@@ -57,12 +60,14 @@ export const projectsContent: ProjectItem[] = [
       "Figma",
       "AWS Amplify",
     ],
+    duration: 6,
     url: "https://www.i-duv.com/",
   },
   {
     key: "nfcConfigTool",
     techStack: ["Angular 17", "NgRx Signal Store", "RxJS", "Chart.js", "Karma",
       "Jasmine",],
+    duration: 3,
     url: "https://lpccs-docs.renesas.com/ntpg_apps/NFCAntTool/v1.1.0/matching-calc",
   },
   {
@@ -79,15 +84,24 @@ export const projectsContent: ProjectItem[] = [
       "Chart.js",
       "Figma",
     ],
+    duration: 6,
     url: "https://app.art-e-fact.com/",
+  },
+  {
+    key: "popeyesRestaurant",
+    techStack: ["Angular", "NgRx", "RxJS", "TypeScript", "SCSS"],
+    duration: 1,
+    url: "https://popeyesuk.com/",
   },
   {
     key: "streamingVodPlatform",
     techStack: ["Angular 14", "RxJS", "Video.js", "Ngx-translate", "SCSS", "Figma"],
+    duration: 3,
   },
   {
     key: "companyWebsite",
     techStack: ["React", "Directus", "GraphQL", "Bootstrap" ,"SCSS", "Adobe XD"],
+    duration: 6,
     url: "https://embiq.com/",
   },
 ];

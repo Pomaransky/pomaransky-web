@@ -2,11 +2,14 @@ import { ExternalLink } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { GithubIcon } from "@/components/icons";
 import { ProjectCardProps } from "./ProjectCard.props";
+import { formatDuration } from "@/utils/formatDuration";
+import { useLocale } from "next-intl";
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const t = useTranslations("Projects");
   const highlights = t.raw(`${project.key}.highlights`) as string[];
 
+  const locale = useLocale();
   return (
     <div
       className={`relative rounded-2xl border border-muted bg-muted/40 p-6 transition-colors hover:border-primary/40 ${project.url ? "pt-12 sm:pt-6" : ""}`}
@@ -35,6 +38,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </li>
         ))}
       </ul>
+      {project.duration && (
+        <>
+          <p className="mt-4 text-sm font-medium text-foreground/80">{t("durationLabel") + ' ~' + formatDuration(project.duration, locale)}</p>
+          <p className="mt-2 text-sm font-medium text-foreground/80"></p>
+        </>
+      )}
 
       <p className="mt-4 text-sm font-medium text-foreground/80">{t("techStackLabel")}</p>
       <div className="mt-2 flex flex-wrap gap-2">
