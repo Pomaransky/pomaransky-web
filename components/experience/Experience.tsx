@@ -1,6 +1,6 @@
 "use client";
 
-import { differenceInCalendarMonths, getYear, parseISO } from "date-fns";
+import { getYear, isAfter, parseISO } from "date-fns";
 import { Briefcase, GraduationCap } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/container/Container";
@@ -10,9 +10,10 @@ import { experienceContent, ExperienceEnum } from "@/content/experience";
 import { ExperienceCard } from "./components/ExperienceCard/ExperienceCard";
 
 const DOT_SIZE = 36;
-const PX_PER_MONTH = 10;
-const MIN_BRACKET_HEIGHT = 60;
+const BRACKET_HEIGHT = 60;
 const ONGOING_BRACKET_HEIGHT = 100;
+const LABEL_OFFSET = 6;
+const OVERLAP_EXTENSION = 24;
 
 export function Experience() {
   const t = useTranslations("Experience") as (key: string) => string;
@@ -22,7 +23,7 @@ export function Experience() {
       <Container maxWidth="max-w-4xl">
         <SectionTitle title={t("sectionTitle")} subtitle={t("sectionSubtitle")} />
         <div className="relative mt-10 mb-8">
-          <ol className="flex flex-col gap-4 sm:gap-10">
+          <ol className="flex flex-col gap-[var(--timeline-gap)] [--timeline-gap:1rem] sm:[--timeline-gap:2.5rem]">
             {experienceContent.map((item, index) => {
               const Icon = item.type === ExperienceEnum.EDUCATION ? GraduationCap : Briefcase;
               const isRight = index % 2 === 1;
@@ -32,12 +33,14 @@ export function Experience() {
               const accentVar = isRight ? "var(--color-primary)" : "var(--color-secondary)";
               const trackOffset = isRight ? 20 : -28;
               const yearLabelClass = isRight ? "text-primary" : "text-secondary";
-              const bracketHeight = item.end
-                ? Math.max(
-                    differenceInCalendarMonths(parseISO(item.end), parseISO(item.start)) * PX_PER_MONTH,
-                    MIN_BRACKET_HEIGHT
-                  )
-                : ONGOING_BRACKET_HEIGHT;
+              const next = experienceContent[index + 1];
+              const overlapsNext =
+                !!next && (!item.end || isAfter(parseISO(item.end), parseISO(next.start)));
+              const showEndLabel = !next || overlapsNext;
+              const bracketHeight = next
+                ? `calc(100% + var(--timeline-gap) + ${overlapsNext ? OVERLAP_EXTENSION : 0}px)`
+                : `${item.end ? BRACKET_HEIGHT : ONGOING_BRACKET_HEIGHT}px`;
+              const endLabelTop = `calc(${DOT_SIZE / 2 + LABEL_OFFSET}px + ${bracketHeight})`;
               const bracketBorderWidth = "2px solid " + accentVar;
 
               return (
@@ -49,7 +52,10 @@ export function Experience() {
                     {!isRight && <ExperienceCard item={item} t={t} />}
                   </div>
 
-                  <div className="relative flex flex-col items-center self-start" aria-hidden>
+                  <div
+                    className={`relative flex flex-col items-center ${next ? "self-stretch" : "self-start"}`}
+                    aria-hidden
+                  >
                     <span
                       className={`absolute -top-4 left-1/2 -translate-x-1/2 text-[10px] font-semibold whitespace-nowrap ${yearLabelClass}`}
                     >
@@ -63,10 +69,11 @@ export function Experience() {
                     </span>
 
                     <span
-                      className={`absolute top-1/2 left-1/2 z-0 ${
+                      className={`absolute left-1/2 z-0 ${
                         item.end ? "" : "[mask-image:linear-gradient(to_bottom,black_75%,transparent)]"
                       }`}
                       style={{
+                        top: DOT_SIZE / 2,
                         height: bracketHeight,
                         width: 7,
                         transform: `translateX(${trackOffset}px)`,
@@ -78,15 +85,17 @@ export function Experience() {
                       }}
                     />
 
-                    <span
-                      className={`absolute left-1/2 text-[10px] font-semibold whitespace-nowrap ${yearLabelClass}`}
-                      style={{
-                        top: DOT_SIZE / 2 + bracketHeight + 6,
-                        transform: `translateX(calc(-50% + ${trackOffset + 5}px))`,
-                      }}
-                    >
-                      {item.end ? getYear(parseISO(item.end)) : t("presentLabel")}
-                    </span>
+                    {showEndLabel && (
+                      <span
+                        className={`absolute left-1/2 text-[10px] font-semibold whitespace-nowrap ${yearLabelClass}`}
+                        style={{
+                          top: endLabelTop,
+                          transform: `translateX(calc(-50% + ${trackOffset + 5}px))`,
+                        }}
+                      >
+                        {item.end ? getYear(parseISO(item.end)) : t("presentLabel")}
+                      </span>
+                    )}
                   </div>
 
                   <div className="hidden md:block">
