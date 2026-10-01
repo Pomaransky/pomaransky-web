@@ -33,13 +33,21 @@
     "sectionTitle": "Edukacja i doświadczenie",
     "sectionSubtitle": "Oś czasu prezentująca mój okres nauki oraz doświadczenia komercyjnego.",
     "presentLabel": "Obecnie",
-    "education": {
+    "bachelorDegree": {
+      "title": "Licencjat z Informatyki",
+      "organization": "Katolicki Uniwersytet Lubelski Jana Pawła II"
+    },
+    "mastersDegree": {
       "title": "Magister Informatyki",
       "organization": "Katolicki Uniwersytet Lubelski Jana Pawła II"
     },
     "embiq": {
       "title": "Front-End Developer",
       "organization": "EMBIQ Sp. z o.o."
+    },
+    "availableForWork": {
+      "title": "Otwarty na nowe wyzwania",
+      "organization": "Dostępny od zaraz"
     }
   },
   "Contact": {
@@ -69,7 +77,7 @@
     "durationLabel": "Czas trwania:",
     "hrPlatform": {
       "title": "System zarządzania procesami HR",
-      "description": "Aplikacja w Angularze do obsługi procesów HR w firmach.",
+      "description": "Aplikacja Angular do obsługi procesów kadrowych w przedsiębiorstwach, stworzona na potrzeby sektora publicznego (uczelnia w Warszawie).",
       "highlights": [
         "Zaprojektowałem i wdrożyłem silnik dynamicznego renderowania komponentów, generujący widoki UI na podstawie konfiguracji z backendu, co skróciło czas wdrażania nowych procesów HR.",
         "Zbudowałem konfigurowalny moduł formularzy dynamicznych oparty o Formly, z własnymi typami pól, regułami walidacji i akcjami sterowanymi zdarzeniami, umożliwiający definiowanie procesów HR osobom nietechnicznym.",
@@ -86,6 +94,16 @@
         "Zaimplementowałem wsparcie dla wielu wersji firmware, zapewniające wsteczną kompatybilność między różnym sprzętem kart.",
         "Zbudowałem dashboardy wizualizacji danych w czasie rzeczywistym przy użyciu Chart.js do diagnostyki urządzeń.",
         "Napisałem testy jednostkowe, aby zapewnić niezawodność komponentów i zapobiegać regresjom, osiągając pokrycie kodu na poziomie ponad 80%."
+      ]
+    },
+    "realTimeMonitoringApplication": {
+      "title": "Aplikacja monitoringu w czasie rzeczywistym",
+      "description": "Aplikacja webowa do monitorowania urządzeń IoT w czasie rzeczywistym, stworzona dla sektora publicznego (władz miejskich w Austrii).",
+      "highlights": [
+        "Zaimplementowałem interaktywną mapę opartą na OpenStreetMap, prezentującą lokalizacje urządzeń.",
+        "Wdrożyłem wyświetlanie kluczowych danych urządzenia: poziomu naładowania baterii, statusu urządzenia oraz podstawowych danych telemetrycznych.",
+        "Zaimplementowałem mechanizm uwierzytelniania użytkowników.",
+        "Zintegrowałem frontend z interfejsem REST API."
       ]
     },
     "streamingVodPlatform": {

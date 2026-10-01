@@ -33,13 +33,21 @@
     "sectionTitle": "Education & Experience",
     "sectionSubtitle": "A timeline of my education and commercial experience.",
     "presentLabel": "Present",
-    "education": {
+    "bachelorDegree": {
+      "title": "Bachelor's Degree in Computer Science",
+      "organization": "John Paul II Catholic University of Lublin"
+    },
+    "mastersDegree": {
       "title": "Master's Degree in Computer Science",
       "organization": "John Paul II Catholic University of Lublin"
     },
     "embiq": {
       "title": "Front-End Developer",
       "organization": "EMBIQ Sp. z o.o."
+    },
+    "availableForWork": {
+      "title": "Open to new opportunities",
+      "organization": "Available immediately"
     }
   },
   "Contact": {
@@ -69,7 +77,7 @@
     "durationLabel": "Duration:",
     "hrPlatform": {
       "title": "HR Process Management System",
-      "description": "An Angular application for handling HR processes in companies.",
+      "description": "An Angular application for handling HR processes in companies developed for public sector (university in Warsaw).",
       "highlights": [
         "Designed and implemented a dynamic component rendering engine that generates UI views from backend configuration, reducing development time for new HR workflows.",
         "Built a configurable dynamic forms module using Formly with custom field types, validation rules, and event-driven actions, enabling non-developers to define HR processes.",
@@ -86,6 +94,16 @@
         "Implemented multi-version firmware support to ensure backward compatibility across different card hardware.",
         "Built real-time data visualization dashboards using Chart.js for device diagnostics.",
         "Wrote unit tests to ensure component reliability and prevent regressions with over 80% coverage"
+      ]
+    },
+    "realTimeMonitoringApplication": {
+      "title": "Real Time Monitoring Application",
+      "description": "A web application for real-time monitoring of IoT devices, built for the public sector (municipal authorities in Austria).",
+      "highlights": [
+        "Implemented an interactive map based on OpenStreetMap showing device locations.",
+        "The display of key device data—battery level, device status, and basic telemetry—has been implemented.",
+        "Built user authentication",
+        "Integrated the frontend with a REST API."
       ]
     },
     "streamingVodPlatform": {

@@ -71,6 +71,11 @@ export const projectsContent: ProjectItem[] = [
     url: "https://lpccs-docs.renesas.com/ntpg_apps/NFCAntTool/v1.1.0/matching-calc",
   },
   {
+    key: "realTimeMonitoringApplication",
+    techStack: ["Angular", "RxJS", "PrimeNG", "OpenStreetMap"],
+    duration: 2,
+  },
+  {
     key: "imageInvestmentPlatform",
     techStack: [
       "Next.js",
