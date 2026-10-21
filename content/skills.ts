@@ -11,10 +11,10 @@ export const skillsContent: SkillCategory[] = [
   {
     sectionTitle: "Skills.frameworksAndLibraries",
     skills: [
-      { name: "Angular", featured: true },
+      { name: "Angular 14-22", featured: true },
       { name: "React", featured: true },
       { name: "Next.js" , featured: true},
-      { name: "NgRx" , featured: true},
+      { name: "NgRx (including SignalStore)" , featured: true},
       { name: "RxJS" , featured: true},
       { name: "PrimeNG" },
       { name: "Angular Material" },
@@ -63,7 +63,10 @@ export const skillsContent: SkillCategory[] = [
   {
     sectionTitle: "Skills.practices",
     skills: [
+      { name: "Single Page Applications (SPA)", featured: true },
       { name: "Microfrontends", featured: true },
+      { name: "Monorepo" },
+      { name: "Mobile First" },
       { name: "Responsive Web Design (RWD)", featured: true },
       { name: "Code Review" },
       { key: "Skills.wcagAccessibility", featured: true },

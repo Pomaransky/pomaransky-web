@@ -10,7 +10,7 @@
   },
   "AboutMe": {
     "sectionTitle": "O Mnie",
-    "description": "Jestem Front-End Developerem z 5-letnim doświadczeniem w budowie rozbudowanych aplikacji w Angular oraz React. Odpowiedzialność i elastyczność w podejściu do technologii pozwalają mi szybko odnaleźć się w nowych projektach. Chętnie uczę się nowych technologii i wzorców, których jeszcze nie znam. Prywatnie: {age}-letni mąż i ojciec dwójki dzieci."
+    "description": "Front-End Developer z ponad 5-letnim doświadczeniem w tworzeniu aplikacji SPA klasy enterprise, głównie w Angularze, ale również w React. Na bieżąco z nowoczesnym Angularem (Signals, standalone components, zoneless) oraz doświadczony w architekturze mikrofrontendowej. Szybko odnajduję się w nowych projektach i chętnie poznaję nowe technologie oraz wzorce. Prywatnie mąż i ojciec dwójki dzieci."
   },
   "Skills": {
     "sectionTitle": "Moje umiejętności",

@@ -10,7 +10,7 @@
   },
   "AboutMe": {
     "sectionTitle": "About Me",
-    "description": "I'm a Front-End Developer with 5 years of experience building enterprise applications in Angular and React. Being responsible and adaptable in my approach to technology lets me get up to speed quickly on new projects. I enjoy learning new technologies and patterns I haven't worked with yet. Outside of work: a {age}-year-old husband and father of two."
+    "description": "Front-End Developer with 5+ years of experience building enterprise SPAs, primarily in Angular, as well as React. Up to date with modern Angular (Signals, standalone components, zoneless) and experienced in microfrontend architecture. Quick to adapt to new codebases, I enjoy learning new technologies and patterns. Outside of work, I'm a husband and father of two."
   },
   "Skills": {
     "sectionTitle": "My Skills",
