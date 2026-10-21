@@ -37,7 +37,7 @@ export const projectsContent: ProjectItem[] = [
     key: "hrPlatform",
     techStack: [
       "Angular 18",
-      "NgRx",
+      "NgRx (Store, SignalStore)",
       "RxJS",
       "TypeScript",
       "PrimeNG",
@@ -115,19 +115,19 @@ export const sideProjectsContent: ProjectItem[] = [
   {
     key: "pulsar",
     techStack: [
-      "Angular 20",
+      "Angular 22",
       "Strapi 5",
       "NgRx Signal Store",
       "RxJS",
       "Ngx-translate",
-      "PrimeNG",
+      "PrimeNG 22",
       "Tailwind",
       "Date-fns",
       "Karma",
       "Jasmine",
     ],
     url: "https://pulsar-app.netlify.app/",
-    links: [{ key: "githubRepository", url: "https://github.com/Pomaransky/angular-with-strapi" }],
+    links: [{ key: "githubRepository", url: "https://github.com/Pomaransky/pulsar" }],
   },
   {
     key: "portfolio",

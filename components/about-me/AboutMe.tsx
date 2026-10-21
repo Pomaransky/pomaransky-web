@@ -3,7 +3,6 @@ import { Container } from "@/components/container/Container";
 import { Section } from "@/components/section/Section";
 import { SectionTitle } from "@/components/section-title/SectionTitle";
 import Image from "next/image";
-import { calculateMyAge } from "@/utils/calculatyMyAge";
 export function AboutMe() {
   const t = useTranslations("AboutMe");
 
@@ -18,7 +17,7 @@ export function AboutMe() {
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-semibold">Arkadiusz Pomarański</h3>
             <p className="text-secondary">Front-End Developer</p>
-            <p className="mt-4 text-foreground/80">{t("description", { age: calculateMyAge(new Date("1997-01-01")) })}</p> {/* Only year for privacy reasons. */}
+            <p className="mt-4 text-foreground/80">{t("description")}</p>
           </div>
         </div>
       </Container>
