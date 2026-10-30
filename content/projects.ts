@@ -115,8 +115,12 @@ export const sideProjectsContent: ProjectItem[] = [
   {
     key: "pulsar",
     techStack: [
+      "Monorepo",
       "Angular 22",
       "Strapi 5",
+      "PostgreSQL (Neon)",
+      "Render",
+      "Cloudinary",
       "NgRx Signal Store",
       "RxJS",
       "Ngx-translate",

@@ -10,7 +10,7 @@
   },
   "AboutMe": {
     "sectionTitle": "About Me",
-    "description": "Front-End Developer with 5+ years of experience building enterprise SPAs, primarily in Angular, as well as React. Up to date with modern Angular (Signals, standalone components, zoneless) and experienced in microfrontend architecture. Quick to adapt to new codebases, I enjoy learning new technologies and patterns. Outside of work, I'm a husband and father of two."
+    "description": "Front-End Developer with 5+ years of experience building enterprise SPAs, primarily in Angular. Up to date with modern Angular (Signals, standalone components, zoneless change detection, Resource API) and experienced in microfrontend architecture. Quick to adapt to new codebases, I enjoy learning new technologies and patterns. In my spare time, I develop <pulsar>Pulsar</pulsar>, a side project built with Angular 22 and NgRx SignalStore."
   },
   "Skills": {
     "sectionTitle": "My Skills",
@@ -157,7 +157,7 @@
     },
     "pulsar": {
       "title": "Pulsar",
-      "description": "A full-stack social platform for publishing posts and comments, built with Angular 20 and NgRx Signal Store.",
+      "description": "A full-stack social platform for publishing posts and comments, built with Angular 22 and NgRx Signal Store. The Strapi backend, migrated from Strapi Cloud, runs on Render with a Neon PostgreSQL database and Cloudinary for media assets.",
       "highlights": [
         "Built a full-stack social platform for publishing posts and comments with paginated feeds.",
         "Implemented role-based access control with an admin panel for user management and moderation.",

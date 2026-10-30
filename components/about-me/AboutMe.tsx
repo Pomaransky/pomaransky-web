@@ -3,6 +3,9 @@ import { Container } from "@/components/container/Container";
 import { Section } from "@/components/section/Section";
 import { SectionTitle } from "@/components/section-title/SectionTitle";
 import Image from "next/image";
+
+const PULSAR_GITHUB_URL = "https://github.com/Pomaransky/pulsar";
+
 export function AboutMe() {
   const t = useTranslations("AboutMe");
 
@@ -17,7 +20,20 @@ export function AboutMe() {
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-semibold">Arkadiusz Pomarański</h3>
             <p className="text-secondary">Front-End Developer</p>
-            <p className="mt-4 text-foreground/80">{t("description")}</p>
+            <p className="mt-4 text-foreground/80">
+              {t.rich("description", {
+                pulsar: (chunks) => (
+                  <a
+                    href={PULSAR_GITHUB_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-primary underline-offset-4 transition-colors hover:underline"
+                  >
+                    {chunks}
+                  </a>
+                ),
+              })}
+            </p>
           </div>
         </div>
       </Container>
