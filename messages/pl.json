@@ -10,7 +10,7 @@
   },
   "AboutMe": {
     "sectionTitle": "O Mnie",
-    "description": "Front-End Developer z ponad 5-letnim doświadczeniem w tworzeniu aplikacji SPA klasy enterprise, głównie w Angularze. Na bieżąco z nowoczesnym Angularem (Signals, standalone components, zoneless change detection, Resource API), z doświadczeniem w architekturze mikrofrontendowej. Szybko odnajduję się w nowych projektach i chętnie poznaję nowe technologie oraz wzorce. Po godzinach rozwijam własny projekt <pulsar>Pulsar</pulsar> — aplikację zbudowaną w Angular 22 i NgRx SignalStore."
+    "description": "Front-End Developer z ponad 5-letnim doświadczeniem w tworzeniu aplikacji SPA klasy enterprise w Angular i React. Na bieżąco z nowoczesnym Angularem (Signals, standalone components, zoneless change detection, Resource API), z doświadczeniem w architekturze mikrofrontendowej. Szybko odnajduję się w nowych projektach i chętnie poznaję nowe technologie oraz wzorce. Po godzinach rozwijam własny projekt <pulsar>Pulsar</pulsar> - aplikację zbudowaną w Angular 22 i NgRx SignalStore."
   },
   "Skills": {
     "sectionTitle": "Moje umiejętności",
