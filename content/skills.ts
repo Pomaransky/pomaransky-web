@@ -26,7 +26,7 @@ export const skillsContent: SkillCategory[] = [
       { name: "react-intl" },
       { name: "Redux Toolkit" },
       { name: "Zustand" },
-      { name: "ReactNative" },
+      { name: "React Native" },
     ],
   },
   {

@@ -155,6 +155,17 @@
         "Modelowałem dane w AWS Amplify oraz wykorzystywałem feature flagi do sterowania udostępnianiem funkcjonalności w poszczególnych regionach."
       ]
     },
+    "bostt": {
+      "title": "BoSTT - aplikacja do edukacji medycznej",
+      "description": "Wieloplatformowa aplikacja mobilna (Android/iOS) stworzona dla Royal National Orthopaedic Hospital (NHS, Wielka Brytania), z ponad 5000 pobrań.",
+      "highlights": [
+        "Współtworzyłem wieloplatformową aplikację mobilną w React Native i Expo.",
+        "Zaprojektowałem architekturę offline-first: wszystkie przypadki pobierają się w tle do pamięci urządzenia (expo-file-system), dzięki czemu po pierwszej synchronizacji aplikacja działa bez internetu.",
+        "Zaimplementowałem wykrywanie stanu sieci (expo-network) oraz synchronizację danych, która aktualizuje treści tylko wtedy, gdy urządzenie jest online.",
+        "Zoptymalizowałem renderowanie obrazów radiologicznych i patologicznych w wysokiej rozdzielczości dzięki cache'owaniu (expo-image), a także obsługę gestów i płynne animacje (Reanimated, Gesture Handler).",
+        "Zarządzałem stanem aplikacji przy użyciu Zustand."
+      ]
+    },
     "pulsar": {
       "title": "Pulsar",
       "description": "Pełna platforma społecznościowa do publikowania postów i komentarzy, zbudowana w Angular 22 i NgRx Signal Store. Backend w Strapi, przeniesiony ze Strapi Cloud, działa na Render z bazą PostgreSQL w Neon oraz Cloudinary do przechowywania plików multimedialnych.",
