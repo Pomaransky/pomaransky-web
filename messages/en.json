@@ -155,6 +155,17 @@
         "Modeled backend data in AWS Amplify and used feature flags to control functionality rollout across regions."
       ]
     },
+    "bostt": {
+      "title": "BoSTT - Medical Education App",
+      "description": "A cross-platform mobile app (Android/iOS) developed for the Royal National Orthopaedic Hospital (NHS, UK), with 5,000+ downloads.",
+      "highlights": [
+        "Co-developed the cross-platform mobile app in React Native and Expo.",
+        "Designed an offline-first architecture: all cases download in the background to device storage (expo-file-system), so the app works without internet after the first sync.",
+        "Implemented network status detection (expo-network) and data sync that updates content only when the device is online.",
+        "Optimized rendering of high-resolution radiology and pathology images with caching (expo-image), plus gesture handling and smooth animations (Reanimated, Gesture Handler).",
+        "Managed application state with Zustand."
+      ]
+    },
     "pulsar": {
       "title": "Pulsar",
       "description": "A full-stack social platform for publishing posts and comments, built with Angular 22 and NgRx Signal Store. The Strapi backend, migrated from Strapi Cloud, runs on Render with a Neon PostgreSQL database and Cloudinary for media assets.",

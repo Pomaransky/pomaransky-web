@@ -64,6 +64,18 @@ export const projectsContent: ProjectItem[] = [
     url: "https://www.i-duv.com/",
   },
   {
+    key: "bostt",
+    techStack: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Zustand",
+      "React Navigation",
+      "Reanimated",
+    ],
+    url: "https://play.google.com/store/apps/details?id=com.rnoh.bostt",
+  },
+  {
     key: "nfcConfigTool",
     techStack: ["Angular 17", "NgRx Signal Store", "RxJS", "Chart.js", "Karma",
       "Jasmine",],
